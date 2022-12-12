@@ -1,0 +1,102 @@
+<!--
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License. See accompanying LICENSE file.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+    <base href="{{.Site.BaseURL}}">
+    <title>Apache Kyuubi(Incubating) - Multi-tenant Thrift JDBC/ODBC server</title>
+
+    <link rel="stylesheet" href="{{ "css/vendor/bootstrap.min.css" | relURL }}">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="{{ "css/vendor/bootstrap-theme.min.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/vendor/semantic.min.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/homePage.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/kyuubi.css" | relURL }}">
+  </head>
+
+  <body>
+    <div id="nav_mask" class='nav_mask'style="display: none;"></div>
+    <nav id="header" class="header">
+      <a href="{{ .Site.Language.Lang | relURL }}">
+        <img class="navbar_logo" src="{{ "kyuubi_logo_hd.png" | relURL}}">
+      </a>
+      {{ partial "navbar.html" .}}
+      <a class="shareImgContainer" href="https://www.apache.org/">
+        Apache Software Foundation 
+        <span class="shareImg"></span>
+        <img class="disappear" src="{{ "share.png" | relURL}}"/>
+        <img class="disappear" src="{{ "activeShare.png" | relURL}}"/>
+      </a>
+    </nav>
+
+    <nav id="header_mobile" class="header_mobile">
+      <a href="{{ "/" | relURL }}"> 
+        <img class="navbar_logo" src="{{ "kyuubi_logo_hd.png" | relURL}}">
+      </a>
+      <div class="phoneBtn" id="phoneBtn">
+          <span></span>
+          <span></span>
+          <span class="headerClose"></span>
+      </div>
+      <div class="mobileNavContainer">
+        {{ partial "navbar.html" .}}
+        <a class="shareImgContainer" href="https://www.apache.org/">
+          Apache Software Foundation 
+          <span class="shareImg"></span>
+          <img class="disappear" src="{{ "share.png" | relURL}}"/>
+          <img class="disappear" src="{{ "activeShare.png" | relURL}}"/>
+        </a>
+      </div>
+    </nav>
+    <script>
+      // mobile headerBtn Click
+      var phoneBtn = document.getElementById('phoneBtn')
+      var mask = document.getElementById('nav_mask')
+      phoneBtn.addEventListener('click', function (e) {
+        var isOpen = mask.style.display !== 'none'
+        phoneBtn.className = isOpen ? 'phoneBtn' : 'phoneBtn closeBtn'
+        mask.style.display = isOpen ? 'none' :' block'
+      })
+
+      mask.addEventListener('click', function (e) {
+        phoneBtn.className = 'phoneBtn' 
+        mask.style.display = 'none' 
+      })
+
+      // header_mobile
+      var header_mobile=document.getElementById('header_mobile')
+      header_mobile.addEventListener('click',function(e){
+        var className=e.target.className
+        if(className==="navLink navLinkWithChild"){
+          var navItem = e.target.parentNode
+          var isOpen = navItem.className!=='navItem'
+          navItem.className = isOpen ? 'navItem' : 'navItem openNavItem'
+        }
+      })
+
+      // listen page scrollX
+      var header = document.getElementById('header')
+      window.onscroll = function () {
+        var scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft;
+        header.style.left = -scrollLeft + 'px'
+      }
+    </script>

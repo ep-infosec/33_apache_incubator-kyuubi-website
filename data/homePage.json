@@ -1,0 +1,139 @@
+{
+  "keyFeatures": [
+    {
+      "img": "homePageImg/kf1.png",
+      "title": "multi-tenancy",
+      "desc": "multi-tenancy-desc"
+    },
+    {
+      "img": "homePageImg/kf2.png",
+      "title": "high-availability",
+      "desc": "high-availability-desc"
+    },
+    {
+      "img": "homePageImg/kf3.png",
+      "title": "multiple-workloads",
+      "desc": "multiple-workloads-desc"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "access-from-anywhere",
+      "list": [
+        "homePageImg/ecoA1.png",
+        "homePageImg/ecoA2.png",
+        "homePageImg/ecoA3.png",
+        "homePageImg/ecoA4.png",
+        "homePageImg/ecoA5.png",
+        "homePageImg/ecoA6.png"
+      ]
+    },
+    {
+      "title": "deploy-at-any-scale",
+      "list": [
+        "homePageImg/ecoB1.png",
+        "homePageImg/ecoB2.png",
+        "homePageImg/ecoB3.png",
+        "homePageImg/ecoB4.png",
+        "homePageImg/ecoB5.png",
+        "homePageImg/ecoB6.png"
+      ]
+    },
+    {
+      "title": "connect-to-any-data",
+      "list": [
+        "homePageImg/ecoC1.png",
+        "homePageImg/ecoC2.png",
+        "homePageImg/ecoC3.png",
+        "homePageImg/ecoC4.png",
+        "homePageImg/ecoC5.png",
+        "homePageImg/ecoC6.png"
+      ]
+    }
+  ],
+  "useCases": [
+    {
+      "title": "interactive-analytics",
+      "desc": "interactive-analytics-desc"
+    },
+    {
+      "title": "batch-processing",
+      "desc": "batch-processing-desc"
+    },
+    {
+      "title": "data-lake-lakehouses",
+      "desc": "data-lake-lakehouses-desc"
+    }
+  ],
+  "community": [
+    {
+      "img": "homePageImg/community1.png",
+      "title": "mailing-list",
+      "href": "mailing-list-href"
+    },
+    {
+      "img": "homePageImg/community2.png",
+      "title": "source-code",
+      "href": "source-code-href"
+    },
+    {
+      "img": "homePageImg/community3.png",
+      "title": "how-to-contribute",
+      "href": "how-to-contribute-href"
+    },
+    {
+      "img": "homePageImg/community4.png",
+      "title": "Slack",
+      "href": "Slack-href"
+    },
+    {
+      "img": "homePageImg/community5.png",
+      "title": "Twitter",
+      "href": "Twitter-href"
+    },
+    {
+      "img": "homePageImg/community6.png",
+      "title": "WeChat"
+    }
+  ],
+  "powered": [
+    "homePageImg/powered1.png",
+    "homePageImg/powered2.png",
+    "homePageImg/powered3.png",
+    "homePageImg/powered4.png",
+    "homePageImg/powered5.png",
+    "homePageImg/powered6.png",
+    "homePageImg/powered7.png",
+    "homePageImg/powered8.png",
+    "homePageImg/powered9.png",
+    "homePageImg/powered10.png",
+    "homePageImg/powered11.png",
+    "homePageImg/powered12.png",
+    "homePageImg/powered13.png",
+    "homePageImg/powered14.png",
+    "homePageImg/powered15.png",
+    "homePageImg/powered16.png",
+    "homePageImg/powered17.png",
+    "homePageImg/powered18.png",
+    "homePageImg/powered19.png",
+    "homePageImg/powered20.png",
+    "homePageImg/powered21.png",
+    "homePageImg/powered22.png",
+    "homePageImg/powered23.png",
+    "homePageImg/powered24.png",
+    "homePageImg/powered25.png",
+    "homePageImg/powered26.png",
+    "homePageImg/powered27.png",
+    "homePageImg/powered28.png",
+    "homePageImg/powered29.png",
+    "homePageImg/powered30.png",
+    "homePageImg/powered31.png",
+    "homePageImg/powered32.png",
+    "homePageImg/powered33.png",
+    "homePageImg/powered34.png",
+    "homePageImg/powered35.png",
+    "homePageImg/powered36.png",
+    "homePageImg/powered37.png",
+    "homePageImg/powered38.png"
+  ]
+}

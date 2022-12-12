@@ -1,0 +1,56 @@
+<!--
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License. See accompanying LICENSE file.
+-->
+<footer class="footer">
+  <div class="footerBox">
+    <div class="footerItem">
+      <a class="acevent" data-class="footerPcImg" data-format="wide" data-mode="dark" data-width="310"></a>
+      <a class="acevent" data-class="footerMobileImg" data-format="wide" data-mode="dark" data-width="114"></a>
+      <p>
+        The Official Global Conference Series of The Apache Software Foundation, connecting open source technology enthusiasts from 
+        around the world to share the latest technology developments and practices.
+      </p>
+    </div>
+    <div class="footerItem">
+      <img class="footerImg" src="{{ "incubator_feather_egg_gray_logo.png" | relURL}}"/>
+      <p>
+        <span class="footerSep"> Apache Kyuubi is an effort undergoing Incubation at The Apache Software Foundation (ASF), sponsored by the Incubator. 
+        Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, 
+        communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. 
+        While incubation status is not necessarily a reflection of the completeness or stability of the code, 
+        it does indicate that the project has yet to be fully endorsed by the ASF.
+        </span>
+        Apache, the Apache Feather logo, and the Apache Incubator project logo are trademarks of The Apache Software Foundation.
+      </p>
+    </div>
+    <div class="footerCopyRight">
+      <div class="footerBlock"></div>
+      <div class="footerCopyRightContent">
+        <span>{{ replace .Site.Copyright "{year}" now.Year }} The Apache Software Foundation</span>
+        <a class="fgooterPrivacy" href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="/js/vendor/semantic.min.js"></script>
+    <script src="https://www.apachecon.com/event-images/snippet.js"></script>
+    <script>
+    $(function() { $('table').addClass('table table-striped'); })
+    </script>
+</body>
+</html>
